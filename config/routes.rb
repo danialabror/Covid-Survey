@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'root/index'
   get 'surveys/index'
   post 'surveys/start'
+  get 'surveys/start'
   get 'surveys/question'
   post 'surveys/question'
   post 'surveys/answer'
