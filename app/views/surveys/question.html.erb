@@ -1,0 +1,38 @@
+<% content_for(:title) do %>
+  Question <%= session[:current] + 1 %> of <%= @total %>
+<% end %>
+<div class="services-area">
+		<div class="container mt-5">
+			<div class="row d-flex justify-content-center">
+				<div class="col-lg-8">
+					<div class="section-tittle text-center mb-80">
+						<h3>Question number <%= session[:current] %> of <%= @total %>​</h3> <hr> <br>
+              <h1><%= @question %></h1> <br>
+
+                <%= form_tag({:controller => "surveys", :action => "answer"}) do %>                                           <!--//-->
+                <div class="row offset-md-5">
+                  <div class="col-md-3 mt-5">
+                    <div class="switch-wrap d-flex justify-content-between">
+                    <h4>Yes</h4>
+                        <div class="col-mt-3">
+                          <%= radio_button_tag :choice, true %>                                      <!--//-->
+                        </div>  
+                    </div>
+                    <div class="switch-wrap d-flex justify-content-between">
+                    <h4>No</h4>
+                      <div class="col-mt-3">
+                        <%= radio_button_tag :choice, false %>                           <!--//-->
+                      </div> 
+                    </div>
+                    <br>
+                </div>
+              </div>
+              <div class="button-group-area mt-40">
+                  <%= submit_tag("NEXT", :class => "genric-btn danger circle arrow") %>                             <!--//-->
+              </div>
+              <% end %>                                                                                             <!--//-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>

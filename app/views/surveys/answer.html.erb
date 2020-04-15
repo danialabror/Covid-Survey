@@ -1,0 +1,10 @@
+<h1>Surveys#answer</h1>
+<p>Find me in app/views/surveys/answer.html.erb</p>
+
+<h1>Question <%= session[:current]  %> of <%= @total %></h1>
+
+<%= form_tag({:controller => "surveys", :action => "question"}) do %>
+  <div class="center">
+	 <%= submit_tag("Continue", :class => "submit") %>
+  </div>
+<% end %>

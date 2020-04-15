@@ -1,0 +1,31 @@
+
+
+
+<div class="pricing-card-area">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+                <div class="single-card text-center mb-30">
+                  <%= form_tag({:controller => "surveys", :action => "start"}) do %>  
+                    <div class="card-top">
+                        <div class="typography">
+                          <h2><%= label_tag :name, "Please enter your name" %></h2>
+                        </div>
+                      </div>
+                    <div class="card-bottom">
+                        <ul>       
+                          <li>                                
+                            <div class="mt-10">
+                                <%= text_field_tag :name, " ", :class => 'single-input' %><br>
+						  	            </div>
+                          </li>
+                        </ul>
+                        <%= submit_tag "Start!", :class => "btn card-btn1"%>
+                    </div>
+                  <% end %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

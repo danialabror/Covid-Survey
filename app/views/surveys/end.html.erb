@@ -1,0 +1,28 @@
+
+<div class="pricing-card-area">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+                <div class="single-card text-center mb-30">
+                    <div class="card-top">
+                        <div class="typography">
+                          <h2><%= session[:name] %></h2><hr>
+                        </div>
+                      </div>
+                    <div class="card-bottom">
+                        <ul>       
+                          <li>                                
+                            <div class="mt-10">
+                              <h4>Anda memiliki <%= @msg %> terinfeksi virus corona</h4> <br>
+						      	        </div>
+                          </li>
+                          <li>
+                              <%= link_to 'Finish', root_path, :class => "btn card-btn1" %>                          
+                          </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

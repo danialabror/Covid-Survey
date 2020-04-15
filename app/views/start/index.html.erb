@@ -1,0 +1,124 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Covid-Survey </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="manifest" href="site.webmanifest">
+		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+		<%= csrf_meta_tags %>
+        <%= csp_meta_tag %>
+            <%# <link rel="stylesheet" href="assets/css/bootstrap.min.css"> %>
+            <%= stylesheet_link_tag 'bootstrap.min', media: 'all.js', 'data-turbolinks-track': 'reload' %>
+            <%# <link rel="stylesheet" href="assets/css/owl.carousel.min.css"> %>
+            <%= stylesheet_link_tag 'owl.carousel.min', media: 'all.js', 'data-turbolinks-track': 'reload' %>
+            <%# <link rel="stylesheet" href="assets/css/flaticon.css"> %>
+            <%= stylesheet_link_tag 'flaticon', media: 'all.js', 'data-turbolinks-track': 'reload' %>
+            <%# <link rel="stylesheet" href="assets/css/slicknav.css"> %>
+            <%= stylesheet_link_tag 'slicknav', media: 'all.js', 'data-turbolinks-track': 'reload' %>
+            <%# <link rel="stylesheet" href="assets/css/animate.min.css"> %>
+            <%= stylesheet_link_tag 'animate.min', media: 'all.js', 'data-turbolinks-track': 'reload' %>
+            <%# <link rel="stylesheet" href="assets/css/magnific-popup.css"> %>
+            <%= stylesheet_link_tag 'magnific-popup', media: 'all.js', 'data-turbolinks-track': 'reload' %>
+            <%# <link rel="stylesheet" href="assets/css/fontawesome-all.min.css"> %>
+            <%= stylesheet_link_tag 'fontawesome-all.min', media: 'all.js', 'data-turbolinks-track': 'reload' %>
+            <%# <link rel="stylesheet" href="assets/css/themify-icons.css"> %>
+            <%= stylesheet_link_tag 'themify-icons', media: 'all.js', 'data-turbolinks-track': 'reload' %>
+            <%# <link rel="stylesheet" href="assets/css/slick.css"> %>
+            <%= stylesheet_link_tag 'slick', media: 'all.js', 'data-turbolinks-track': 'reload' %>
+            <%# <link rel="stylesheet" href="assets/css/nice-select.css"> %>
+            <%= stylesheet_link_tag 'nice-select', media: 'all.js', 'data-turbolinks-track': 'reload' %>
+            <%# <link rel="stylesheet" href="assets/css/style.css"> %>
+            <%= stylesheet_link_tag 'style', media: 'all.js', 'data-turbolinks-track': 'reload' %>
+
+            <%# -------------------------------------------------------------------------------------------- %>
+           
+   </head>
+
+   <body>
+
+    <main>
+
+        <!-- Slider Area Start-->
+        <div class="slider-area ">
+            <div class="slider-active">
+                <div class="single-slider slider-height slider-padding sky-blue d-flex align-items-center">
+                    <div class="container">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-lg-6 col-md-9 ">
+                                <div class="hero__caption">
+                                    <span data-animation="fadeInUp" data-delay=".4s">WELCOME</span>
+                                    <h1 data-animation="fadeInUp" data-delay=".6s">Coronavirus<br>survey</h1>
+                                    <p data-animation="fadeInUp" data-delay=".8s">“Yang terbesar dari kebodohan adalah mengorbankan kesehatan untuk jenis lain dari kebahagiaan.”</p>
+                                    <!-- Slider btn -->
+                                   <div class="slider-btns">
+                                        <!-- Hero-btn -->
+                                        <%= link_to  "Start Survey", surveys_index_path, class: 'btn btn-radius' %>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="hero__img d-none d-lg-block f-right" data-animation="fadeInRight" data-delay="1s">
+                                    <%= image_tag 'hero/hero_right.png' %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+                            
+         <%= javascript_tag 'popper.min.js', 'data-turbolinks-track': 'reload' %>
+        <%# <script src="./assets/js/bootstrap.min.js"></script> %>
+        <%= javascript_tag 'bootstrap.min.js', 'data-turbolinks-track': 'reload' %>
+	    <!-- Jquery Mobile Menu -->
+        <%# <script src="./assets/js/jquery.slicknav.min.js"></script> %>
+        <%= javascript_tag 'jquery.slicknav.min.js', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_tag 'vendor/modernizr-3.5.0.min.js', 'data-turbolinks-track': 'reload' %>
+		<%= javascript_tag 'vendor/jquery-1.12.4.min.js', 'data-turbolinks-track': 'reload' %>
+        <%# <script src="./assets/js/owl.carousel.min.js"></script> %>
+        <%= javascript_tag 'owl.carousel.min.js', 'data-turbolinks-track': 'reload' %>
+        <%# <script src="./assets/js/slick.min.js"></script> %>
+        <%= javascript_tag 'slick.min.js', 'data-turbolinks-track': 'reload' %>
+        <!-- Date Picker -->
+        <%# <script src="./assets/js/gijgo.min.js"></script> %>
+        <%= javascript_tag 'gijgo.min.js', 'data-turbolinks-track': 'reload' %>
+		<!-- One Page, Animated-HeadLin -->
+        <%# <script src="./assets/js/wow.min.js"></script> %>
+        <%= javascript_tag 'wow.min.js', 'data-turbolinks-track': 'reload' %>
+		<%# <script src="./assets/js/animated.headline.js"></script> %>
+        <%= javascript_tag 'animated.headline.js', 'data-turbolinks-track': 'reload' %>
+        <%# <script src="./assets/js/jquery.magnific-popup.js"></script> %>
+        <%= javascript_tag 'jquery.magnific-popup.js', 'data-turbolinks-track': 'reload' %>
+
+		<!-- Scrollup, nice-select, sticky -->
+        <%# <script src="./assets/js/jquery.scrollUp.min.js"></script> %>
+        <%= javascript_tag 'jquery.scrollUp.min.js', 'data-turbolinks-track': 'reload' %>
+        <%# <script src="./assets/js/jquery.nice-select.min.js"></script> %>
+        <%= javascript_tag 'jquery.nice-select.min.js', 'data-turbolinks-track': 'reload' %>
+		<%# <script src="./assets/js/jquery.sticky.js"></script> %>
+        <%= javascript_tag 'jquery.sticky.js', 'data-turbolinks-track': 'reload' %>
+        
+        <!-- contact js -->
+        <%# <script src="./assets/js/contact.js"></script> %>
+        <%= javascript_tag 'contact.js', 'data-turbolinks-track': 'reload' %>
+        <%# <script src="./assets/js/jquery.form.js"></script> %>
+        <%= javascript_tag 'jquery.form.js', 'data-turbolinks-track': 'reload' %>
+        <%# <script src="./assets/js/jquery.validate.min.js"></script> %>
+        <%= javascript_tag 'jquery.validate.min.js', 'data-turbolinks-track': 'reload' %>
+        <%# <script src="./assets/js/mail-script.js"></script> %>
+        <%= javascript_tag 'mail-script.js', 'data-turbolinks-track': 'reload' %>
+        <%# <script src="./assets/js/jquery.ajaxchimp.min.js"></script> %>
+        <%= javascript_tag 'jquery.ajaxchimp.min.js', 'data-turbolinks-track': 'reload' %>
+        
+		<!-- Jquery Plugins, main Jquery -->	
+        <%# <script src="./assets/js/plugins.js"></script> %>
+        <%= javascript_tag 'plugins.js', 'data-turbolinks-track': 'reload' %>
+        <%# <script src="./assets/js/main.js"></script> %>
+        <%= javascript_tag 'main.js', 'data-turbolinks-track': 'reload' %>
+       
+    </body>
+</html>
