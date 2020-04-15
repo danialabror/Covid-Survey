@@ -4,7 +4,7 @@ class SurveysController < ApplicationController
 
   def start
     session.clear
-    @survey = Survey.new(params[:surveys])
+    # @survey = Survey.new(params[:surveys])
     name = params[:name] 
     total = 21
 
