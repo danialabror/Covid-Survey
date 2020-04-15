@@ -13,15 +13,15 @@
                 <div class="row offset-md-5">
                   <div class="col-md-3 mt-5">
                     <div class="switch-wrap d-flex justify-content-between">
-                    <h4>Yes</h4>
+                    <h4><%= label_tag :choice, "Yes" %></h4>
                         <div class="col-mt-3">
-                          <%= radio_button_tag :choice, true %>                                      <!--//-->
+                          <%= radio_button_tag 'choice', "true" %>                                      <!--//-->
                         </div>  
                     </div>
                     <div class="switch-wrap d-flex justify-content-between">
-                    <h4>No</h4>
+                    <h4><%= label_tag :choice, "No" %></h4>
                       <div class="col-mt-3">
-                        <%= radio_button_tag :choice, false %>                           <!--//-->
+                        <%= radio_button_tag 'choice', "false" %>                    <!--//-->
                       </div> 
                     </div>
                     <br>
@@ -30,7 +30,7 @@
               <div class="button-group-area mt-40">
                   <%= submit_tag("NEXT", :class => "genric-btn danger circle arrow") %>                             <!--//-->
               </div>
-              <% end %>                                                                                             <!--//-->
+              <% end %>                                                           <!--//-->
 					</div>
 				</div>
 			</div>

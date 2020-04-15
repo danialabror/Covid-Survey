@@ -9,7 +9,7 @@ class SurveysController < ApplicationController
     total = 21
 
     session[:current] ||= 1
-    session[:yes] ||= 0
+    session[:yes] = 0
     session[:name] = name
 
     redirect_to :action => "question"
@@ -59,10 +59,10 @@ class SurveysController < ApplicationController
     session[:current]
     total = 21
 
-    @pilihan = params[:choice]
+    pilihan = params[:choice]
 
 
-    if @pilihan = true
+    if pilihan == 'true'
       session[:yes] += 1
     end
 
